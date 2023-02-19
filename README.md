@@ -15,6 +15,8 @@ Running
 node index.js
 ```
 
+**At this point, open a browser and copy this url `http://localhost:3000`**
+
 ## Screenshots
 
 Few screenshots from this demo application
