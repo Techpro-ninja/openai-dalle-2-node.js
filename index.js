@@ -16,14 +16,14 @@ app.set("view engine", "handlebars");
 const upload = multer({ dest: "uploads/" });
 const port = 3000;
 
-// Import the OpenAI
+// Initiate the OpenAI configuration
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "sk-SxxxxxYM28zusSuhQHxxxxxFJq8NKYeyZxxxxxx",
 });
 const openai = new OpenAIApi(configuration);
 
-//Sets handlebars configurations (we will go through them later on)
+//Sets handlebars configurations for layouts
 app.engine(
   "handlebars",
   handlebars.engine({
