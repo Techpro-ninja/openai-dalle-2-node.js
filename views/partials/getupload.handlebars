@@ -1,0 +1,52 @@
+<h1 class="mt-2">Edit uploaded image</h1>
+<code>Upload a square image only.</code><br />
+<code>Both mask and original files should have sam dimensions</code><br />
+<code><b>*Image format supported -PNG only</b></code>
+<div class="mt-2 text-center">
+  <div class="col col-lg-12 p-auto m-auto">
+    <form
+      method="post"
+      name="openai-codex-with-nodejs"
+      action="get-upload"
+      enctype="multipart/form-data"
+      class="btn btn-light"
+    >
+      <div class="row">
+        <div class="col-md-3">Original file</div>
+        <div class="col-md-3"><input type="file" name="upload_image" /></div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-md-3">Masked file</div>
+        <div class="col-md-3"><input
+            type="file"
+            name="upload_masked_image"
+          /></div>
+
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-md-3">Description</div>
+        <div class="col-md-3"><input
+            type="text"
+            name="queryPrompt"
+            class="font"
+            placeholder="Explain needed changes"
+          /></div>
+
+      </div>
+
+      <div class="mt-2">
+        <input type="submit" name="submit" class="btn btn-sm btn-danger" />
+      </div>
+
+    </form>
+  </div>
+</div>
+<div class="mt-2">
+
+  {{#if data}}
+    <b>Output</b><br />
+    <img src="{{data}}" />
+  {{/if}}
+</div>

@@ -1,0 +1,27 @@
+<h1 class="mt-2">Generate Image</h1>
+<code>Will generate a square image of 256 x 256</code>
+<div class="mt-2 text-center">
+  <div class="col col-lg-6 p-auto m-auto">
+    <form method="post" name="openai-codex-with-nodejs" action="/">
+
+      <div class="mt-2">
+        <input
+          type="text"
+          placeholder="Describe your image here"
+          name="queryPrompt"
+          class="form-control"
+        />
+      </div>
+
+      <div class="mt-2">
+        <input type="submit" name="submit" class="btn btn-sm btn-danger" />
+      </div>
+
+    </form>
+  </div>
+</div>
+<div class="mt-2">
+  {{#if data}}
+    <img src="{{data}}" />
+  {{/if}}
+</div>

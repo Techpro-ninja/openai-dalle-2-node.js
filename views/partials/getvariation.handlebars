@@ -1,0 +1,31 @@
+<h1 class="mt-2">Get Image Variation</h1>
+<code>Upload a square image only.</code><br />
+<code>File size should be less than 4mb</code><br />
+<code><b>*Image format supported -PNG only</b></code>
+<div class="mt-2 text-center">
+  <div class="col col-lg-6 p-auto m-auto">
+    <form
+      method="post"
+      name="openai-codex-with-nodejs"
+      action="get-variation"
+      enctype="multipart/form-data"
+      class="btn btn-light"
+    >
+
+      <input type="file" name="upload_image" />
+
+      <div class="mt-2">
+        <input type="submit" name="submit" class="btn btn-sm btn-danger" />
+      </div>
+
+    </form>
+  </div>
+</div>
+<div class="mt-2">
+  {{#if data}}
+
+    <b>Output</b><br />
+    <img src="{{data}}" />
+
+  {{/if}}
+</div>
