@@ -14,3 +14,19 @@ Running
 ```sh
 node index.js
 ```
+
+## Screenshots
+
+Few screenshots from this demo application
+
+### Generate image from prompt
+
+![Generate image from prompt](./screen1.png "Generate image from prompt").
+
+### Mask an image to edit
+
+![Mask an image to edit](./screen2.png "Mask an image to edit").
+
+### Generate image variation
+
+![Generate image variation](./screen3.png "Generate image variation").
